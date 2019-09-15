@@ -1,6 +1,5 @@
 # YOLOv3-for-Windows
 
-
 **<font size=5>在python3.6下安装vs2017+Cuda9.0+Cudnn7.1+TensorFlow-gpu1.9.0记录</font>**
 
 
@@ -15,11 +14,11 @@
 
 安装过程：
 
-![](E:\研究生\Python学习\图片\vs2017安装过程1.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/vs2017%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B1.png)
 
 选择单个组件，然后选择vc++2015,也就是vc14，如下图所选择！！！安装即可
 
-![](E:\研究生\Python学习\图片\vs2017安装过程2.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/vs2017%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B2.png)
 
 
 
@@ -27,17 +26,17 @@
 
 如下图所示：
 
-![](E:\研究生\Python学习\图片\第二次安装的时候共享组件、工具和SDK的路径显示第一次的位置.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%AE%89%E8%A3%85%E7%9A%84%E6%97%B6%E5%80%99%E5%85%B1%E4%BA%AB%E7%BB%84%E4%BB%B6%E3%80%81%E5%B7%A5%E5%85%B7%E5%92%8CSDK%E7%9A%84%E8%B7%AF%E5%BE%84%E6%98%BE%E7%A4%BA%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%9A%84%E4%BD%8D%E7%BD%AE.png)
 
 **删除注册表**：
 
 点击开始菜单->打开运行->输入regedit
 
-![](E:\研究生\Python学习\图片\删除注册表-regedit.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E5%88%A0%E9%99%A4%E6%B3%A8%E5%86%8C%E8%A1%A8-regedit.png)
 
 根据路径**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup**打开目标**SharedInstallationPath**
 
-![](E:\研究生\Python学习\图片\打开注册表找到目标SharedInstallationPath.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/打开注册表找到目标SharedInstallationPath.png)
 
 删除就ok了，第二次安装的时候**共享组件、工具和SDK**的路径就不会显示第一次的位置
 
@@ -49,11 +48,11 @@
 
 **Linux下**
 
-![](E:\研究生\Python学习\图片\Linux下的对照表.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/Linux%E4%B8%8B%E7%9A%84%E5%AF%B9%E7%85%A7%E8%A1%A8.png)
 
 **Windows下**
 
-![](E:\研究生\Python学习\图片\windows下的对照表.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/windows%E4%B8%8B%E7%9A%84%E5%AF%B9%E7%85%A7%E8%A1%A8.png)
 
 
 
@@ -61,25 +60,25 @@
 
 首先需要确认计算机有独立显卡（而且是英伟达的显卡），然后点击[此处](https://developer.nvidia.com/cuda-gpus)找一下你的显卡是否在列表中
 
-![](E:\研究生\Python学习\图片\查询显卡是否够格.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E6%9F%A5%E8%AF%A2%E6%98%BE%E5%8D%A1%E6%98%AF%E5%90%A6%E5%A4%9F%E6%A0%BC.png)
 
 访问[链接](https://developer.nvidia.com/cuda-toolkit-archive)在列表中选中Cuda9.0
 
-![](E:\研究生\Python学习\图片\Cuda列表.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/Cuda%E5%88%97%E8%A1%A8.png)
 
 之后选择相关参数进行下载
 
-![](E:\研究生\Python学习\图片\下载Cuda9.0.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/下载Cuda9.0.png)
 
 下载Cuda9.0过程建议将Cuda9.0安装在C盘（亲测安装到C盘以外就爆炸）
 
 安装成功后进行环境变量的添加：
 
-![](E:\研究生\Python学习\图片\cuda环境变量设置-new-2.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/cuda%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE-new-2.png)
 
 测试Cuda是否安装成功：
 
-![](E:\研究生\Python学习\图片\测试Cuda安装是否成功.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E6%B5%8B%E8%AF%95Cuda%E5%AE%89%E8%A3%85%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F.png)
 
 
 
@@ -87,7 +86,7 @@
 
 访问[链接](https://developer.nvidia.com/cudnn)（需要注册账号）
 
-![](E:\研究生\Python学习\图片\安装Cudnn.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E5%AE%89%E8%A3%85Cudnn.png)
 
 注意选择Cudnn，注意7.1.x后面跟着的是Cuda几版本
 
@@ -95,11 +94,11 @@
 
 Cudnn解压后的文件夹内容：
 
-![](E:\研究生\Python学习\图片\Cudnn文件夹内容.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/Cudnn%E6%96%87%E4%BB%B6%E5%A4%B9%E5%86%85%E5%AE%B9.png)
 
 将bin里面的cudnn64_7.dll、include里面的cudnn.h、lib里面的cudnn.lib分别放入Cuda目录下的bin、include、lib文件夹里
 
-![](E:\研究生\Python学习\图片\放置Cuda9.0里的位置.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E6%94%BE%E7%BD%AECuda9.0%E9%87%8C%E7%9A%84%E4%BD%8D%E7%BD%AE.png)
 
 
 
@@ -133,7 +132,7 @@ print(sess.run(hello))
 
 结果：
 
-![](E:\研究生\Python学习\图片\测试cuda+cudnn+tensorflow-gpu+python是否安装成功.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E6%B5%8B%E8%AF%95cuda%2Bcudnn%2Btensorflow-gpu%2Bpython%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png)
 
 最后会输出信息，在这个之前会显示你的显卡信息
 
@@ -147,17 +146,17 @@ print(sess.run(hello))
 
 **请不要使用3.4.1，请不要使用3.4.1，请不要使用3.4.1**。yolo的作者已经在github上说明了使用3.4.1会出现编译问题。（亲测，3.4.1是真的有问题，假如有小伙伴使用3.4.1没问题，那就是我太菜的问题(●'◡'●)）
 
-![](E:\研究生\Python学习\图片\opencv3.4.0下载.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/opencv3.4.0%E4%B8%8B%E8%BD%BD.png)
 
 双击下载好的文件，选择解压路径后点击Extract即可完成解压，解压后就会自动生成一个opencv的文件夹
 
-![](E:\研究生\Python学习\图片\点击下载好的opencv文件.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E7%82%B9%E5%87%BB%E4%B8%8B%E8%BD%BD%E5%A5%BD%E7%9A%84opencv%E6%96%87%E4%BB%B6.png)
 
 配置环境变量
 
 将你解压后的opencv文件夹中的***\opencv\build\x64\vc14\bin路径添加到环境变量中
 
-![](E:\研究生\Python学习\图片\设置opencv环境变量.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E8%AE%BE%E7%BD%AEopencv%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png)
 
 ok~ 
 
@@ -179,7 +178,7 @@ git clone https://github.com/AlexeyAB/darknet
 
 下载完成之后，用文本编辑器、或记事本（我用的是sublime）打开...\darknet-master\build\darknet下面的darknet.vcxproj。分别在55行和299行（也可以全文搜索CUDA ）的CUDA 10.0————>CUDA 9.0
 
-![](E:\研究生\Python学习\图片\修改文件darknet.vcxproj中的conda.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6darknet.vcxproj%E4%B8%AD%E7%9A%84conda.png)
 
 
 
@@ -189,58 +188,58 @@ git clone https://github.com/AlexeyAB/darknet
 
 打开后，vs会显示
 
-![](E:\研究生\Python学习\图片\打开darknet后选择无升级.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/打开darknet后选择无升级.png)
 
 注意，一定要选择**无升级**，因为，如果点击升级，那就是把vs2015的项目升级成vs2017,这样做的结果就是**白给**。然后将项目改成Release x64，然后右键项目—>属性
 
-![](E:\研究生\Python学习\图片\vs编辑项目属性.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/vs%E7%BC%96%E8%BE%91%E9%A1%B9%E7%9B%AE%E5%B1%9E%E6%80%A7.png)
 
 然后，VC++目录—>包含目录—>编辑添加目录：...\opencv\build\inclde（...表示各位小伙伴你们各自的安装路径，以下同理）
-![](E:\研究生\Python学习\图片\vc++设置.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/vc%2B%2B%E8%AE%BE%E7%BD%AE.png)
 
 然后，配置库目录，添加：...\opencv\build\x64\vc14\lib
 
-![](E:\研究生\Python学习\图片\vc++库目录设置.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/vc%2B%2B%E5%BA%93%E7%9B%AE%E5%BD%95%E8%AE%BE%E7%BD%AE.png)
 
 然后，C/C++—>常规—>附加包含目录—>编辑添加目录：...\opencv\build\include
 
-![](E:\研究生\Python学习\图片\c++附加目录设置.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/c%2B%2B%E9%99%84%E5%8A%A0%E7%9B%AE%E5%BD%95%E8%AE%BE%E7%BD%AE.png)
 
 然后，链接器—>输入—>附加依赖项—>添加目录：...\opencv\build\x64\vc14\lib下库的名字：opencv_world340.lib
 
-![](E:\研究生\Python学习\图片\链接器附加依赖项设置.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E9%93%BE%E6%8E%A5%E5%99%A8%E9%99%84%E5%8A%A0%E4%BE%9D%E8%B5%96%E9%A1%B9%E8%AE%BE%E7%BD%AE.png)
 
 接着，**需要拷贝安装好的CUDA 9.0.props等文件**：
 
 CUDA 9.0.props等文件就在cuda的安装目录下，本人的路径是：C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\extras\visual_studio_integration\MSBuildExtensions
 
-![](E:\研究生\Python学习\图片\需要拷贝的cuda9.0的文件.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E9%9C%80%E8%A6%81%E6%8B%B7%E8%B4%9D%E7%9A%84cuda9.0%E7%9A%84%E6%96%87%E4%BB%B6.png)
 
 将里面的所有的文件考本到C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations中，这是vs2017安装后的路径
 
-![](E:\研究生\Python学习\图片\将cuda文件拷贝到vs下的buildCustomizations下.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E5%B0%86cuda%E6%96%87%E4%BB%B6%E6%8B%B7%E8%B4%9D%E5%88%B0vs%E4%B8%8B%E7%9A%84buildCustomizations%E4%B8%8B.png)
 
 不然可能会报如下错误：
 
-![](E:\研究生\Python学习\图片\因为没有拷贝cuda文件报错.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E5%9B%A0%E4%B8%BA%E6%B2%A1%E6%9C%89%E6%8B%B7%E8%B4%9Dcuda%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99.png)
 
 然后，将...\opencv\build\x64\vc14\bin下的opencv_world340.dll 和opencv_ffmpeg340_64.dll 
 
-![](E:\研究生\Python学习\图片\将opencv的文件拷贝到项目下的x64中.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E5%B0%86opencv%E7%9A%84%E6%96%87%E4%BB%B6%E6%8B%B7%E8%B4%9D%E5%88%B0%E9%A1%B9%E7%9B%AE%E4%B8%8B%E7%9A%84x64%E4%B8%AD.png)
 
 复制到E:\darknet\darknet-master\build\darknet\x64 目录下。
 
 最后，还需要修改darknet.vcxproj下158行的compute值,将75改成61，原因貌似是和使用者显卡的计算能力值有关（**这一步小伙伴们可以根据自身情况可以灵活变动**）
 
-![](E:\研究生\Python学习\图片\修改compute值.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E4%BF%AE%E6%94%B9compute%E5%80%BC.png)
 
 因为我当时配置的时候也参考了别人的帖子，别人75是可以正常进行工程生产，而我需要降低数值才可以，可能我的显卡太菜了/(ㄒoㄒ)/
 
 完成上述之后，就可以在darknet工程上右键—>生成，就会发现在工程目录下x64下多了些darknet.exe等文件啦，到这里就完成了搭建了
 
-![](E:\研究生\Python学习\图片\成功的生成.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E6%88%90%E5%8A%9F%E7%9A%84%E7%94%9F%E6%88%90.png)
 
-![](E:\研究生\Python学习\图片\生成的darknet.exe.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E7%94%9F%E6%88%90%E7%9A%84darknet.exe.png)
 
 完成搭建，之后就是激动人心的测试环节
 
@@ -250,7 +249,7 @@ CUDA 9.0.props等文件就在cuda的安装目录下，本人的路径是：C:\Pr
 
 - 下载作者训练好的模型：[官网地址](https://pjreddie.com/darknet/yolo/)、[GitHub](https://github.com/AlexeyAB/darknet/blob/master/README.md)下载yolo3.weights
 
-![](E:\研究生\Python学习\图片\github下的yolo下载处.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/github%E4%B8%8B%E7%9A%84yolo%E4%B8%8B%E8%BD%BD%E5%A4%84.png)
 
 为了方便大家，可以直接从我的[网盘，提取码zfib](https://pan.baidu.com/s/1FMXsQW19aSADuDyNF33IhA)下载
 
@@ -260,7 +259,7 @@ CUDA 9.0.props等文件就在cuda的安装目录下，本人的路径是：C:\Pr
 
 下面是结果（我用的是自己喜欢的图）：
 
-![](E:\研究生\Python学习\图片\属于命令行成功.png)
+![](https://raw.githubusercontent.com/RuanZzzz/YOLOv3-for-Windows/master/readmeImages/%E5%B1%9E%E4%BA%8E%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%88%90%E5%8A%9F.png)
 
 
 
